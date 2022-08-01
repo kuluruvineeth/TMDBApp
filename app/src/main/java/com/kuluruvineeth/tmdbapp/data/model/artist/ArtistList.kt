@@ -6,5 +6,5 @@ import com.kuluruvineeth.tmdbapp.data.model.artist.Artist
 
 data class ArtistList(
     @SerializedName("results")
-    val results: List<Artist>
+    val artists: List<Artist>
 )

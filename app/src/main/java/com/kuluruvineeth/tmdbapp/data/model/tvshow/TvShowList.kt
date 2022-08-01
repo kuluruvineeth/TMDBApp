@@ -6,5 +6,5 @@ import com.kuluruvineeth.tmdbapp.data.model.tvshow.TvShow
 
 data class TvShowList(
     @SerializedName("results")
-    val results: List<TvShow>,
+    val tvShows: List<TvShow>,
 )
