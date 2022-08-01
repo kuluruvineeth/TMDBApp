@@ -1,8 +1,8 @@
 package com.kuluruvineeth.tmdbapp.data.api
 
-import com.kuluruvineeth.tmdbapp.data.ArtistList
-import com.kuluruvineeth.tmdbapp.data.MovieList
-import com.kuluruvineeth.tmdbapp.data.TvShowList
+import com.kuluruvineeth.tmdbapp.data.model.artist.ArtistList
+import com.kuluruvineeth.tmdbapp.data.model.movie.MovieList
+import com.kuluruvineeth.tmdbapp.data.model.tvshow.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

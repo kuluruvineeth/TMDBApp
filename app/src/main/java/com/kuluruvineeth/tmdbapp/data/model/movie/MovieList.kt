@@ -1,8 +1,8 @@
-package com.kuluruvineeth.tmdbapp.data
+package com.kuluruvineeth.tmdbapp.data.model.movie
 
 
 import com.google.gson.annotations.SerializedName
-import com.kuluruvineeth.tmdbapp.data.Movie
+import com.kuluruvineeth.tmdbapp.data.model.movie.Movie
 
 data class MovieList(
     @SerializedName("results")
