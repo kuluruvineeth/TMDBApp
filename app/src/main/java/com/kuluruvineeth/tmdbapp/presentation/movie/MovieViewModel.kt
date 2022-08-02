@@ -11,13 +11,17 @@ class MovieViewModel(
     private val updateMoviesUsecase: UpdateMoviesUsecase
 ):ViewModel() {
 
-    fun getMovies() = liveData<List<Movie>?> {
+    fun getMovies() = liveData<List<Movie>> {
         val movieList = getMoviesUseCase.execute()
-        emit(movieList)
+        if (movieList != null) {
+            emit(movieList)
+        }
     }
 
-    fun updateMovies() = liveData<List<Movie>?> {
+    fun updateMovies() = liveData<List<Movie>> {
         val movieList = updateMoviesUsecase.execute()
-        emit(movieList)
+        if (movieList != null) {
+            emit(movieList)
+        }
     }
 }
